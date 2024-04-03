@@ -5,8 +5,10 @@ import explore from "../../assets/explore.webp"
 import refresh from "../../assets/refresh.webp"
 import brain from "../../assets/brain.webp"
 import something from "../../assets/something.webp"
+import { useState } from 'react';
 
 function Page2() {
+    const [selectedOption, setSelectedOption] = useState(null);
     const option =  [
         {
             text : 'learning specific skill to advance my career',
@@ -31,15 +33,24 @@ function Page2() {
        
         
     ];
+    const handleOptionSelect = (index) => {
+        setSelectedOption(index);
+    };
   return (
     <div>
-          <div className="container mx-auto px-10 py-10  ">
+          <div className="container mx-auto ">
             <div className="max-w-[700px] mx-auto white p-6 rounded-lg  text-center">
-                <h2 className="text-2xl font-semibold mb-4">Which are you most intrested in?</h2>
-                <p className="text-gray-500 mb-4">choose just one. this will help us to get you started(but will not limit your exprience)</p>
+                <h2 className="mb-4 text-2xl font-semibold">Which are you most intrested in?</h2>
+                <p className="mb-4 text-gray-500">choose just one. this will help us to get you started(but will not limit your exprience)</p>
                 {option.map((option, index) => (
                     <div key={index} className="">
-                        <OptionField src={option.src} text={option.text} additionalText={option.additionalText} />
+                         <OptionField
+                       src={option.src}
+                     text={option.text}
+                    additionalText={option.additionalText}
+                  onClick={() => handleOptionSelect(index)}
+                  style={{ backgroundColor: selectedOption === index ? "green" : "white" }} 
+/>
                     </div>
                 ))}
             </div>

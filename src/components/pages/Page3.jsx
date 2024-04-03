@@ -3,22 +3,23 @@ import robot from "../../assets/robot.webp"
 
 function Page3() {
     return (
-        <div className="flex justify-center items-center mx-auto mt-10">
-            <div className="w-1/2 lg:w-1/3 mx-4">
-                {/* First Responsive Div */}
-                <div className=" p-4 rounded-lg ">
-                    <img  className="shadow-inner" src={robot}/>
-                   
+        <div className="flex items-center justify-center mx-auto">
+            <div className="flex flex-row  w-full max-w-[900px] mx-4">
+                <div className="mx-4 lg-w-1/3">
+                    {/* First Responsive Div */}
+                    <div className="p-4 rounded-lg">
+                        <img className=" min-h-[200px]  min-w-[100px] mshadow-inner " src={robot} alt="Robot"/>
+                    </div>
                 </div>
-            </div>
-            <div className="w-1/2 lg:w-1/3 mx-4">
-                {/* Second Responsive Div */}
-                <div className=" p-4 rounded-lg">
-                    <h2 className="text-3xl font-semibold mb-2">you're in the right place</h2>
-                    <p>Brilliant gets you hands-on to help improve your professional
-                        skills and knowledge. you'll intract with concepts and solve
-                         fun problems in math. science, and computer science
-                    </p>
+                <div className="mx-4 overflow-hidden lg:w-1/2">
+                    {/* Second Responsive Div */}
+                    <div className="p-4 rounded-lg">
+                        <h2 className="mt-10 mb-2 text-3xl font-semibold">You're in the right place</h2>
+                        <p>Brilliant gets you hands-on to help improve your professional
+                            skills and knowledge. You'll interact with concepts and solve
+                            fun problems in math, science, and computer science.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

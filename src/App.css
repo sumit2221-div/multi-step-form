@@ -1,0 +1,11 @@
+@keyframes spin-slow {
+    0% { transform: rotate(0deg); background-color: #F6AD55; }
+    25% { transform: rotate(90deg); background-color: #68D391; }
+    50% { transform: rotate(180deg); background-color: #63B3ED; }
+    75% { transform: rotate(270deg); background-color: #9F7AEA; }
+    100% { transform: rotate(360deg); background-color: #F6AD55; }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 2s linear infinite;
+}
