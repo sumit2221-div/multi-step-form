@@ -3,7 +3,7 @@ import cartoon from "../../assets/cartoon.jpg"
 
 function Page5() {
     return (
-        <div className="flex items-center justify-center mx-auto max-w-[800px] ">
+        <div className="flex items-center justify-center mx-auto max-w-[800px]  mt-20">
             <div className="w-1/3 mx-2 lg:w-1/3">
                 {/* First Responsive Div */}
                 <div className="p-4 rounded-lg ">

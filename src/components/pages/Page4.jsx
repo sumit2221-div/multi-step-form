@@ -32,11 +32,11 @@ function Page4() {
 
     return (
         <div>
-            <div className="container mx-auto min-h-[150px] max-h-[500px]">
+            <div className="container mx-auto min-h-[150px] max-h-[500px] mt-10">
                 <div className="max-w-[1000px] mx-auto white p-6 rounded-lg text-center max-h-700">
                     <h2 className="mb-4 text-2xl font-semibold lg:text-3xl">What is your math comfort level?</h2>
                     <p className="mb-4 text-sm text-gray-500 lg:text-base">Choose the highest level you feel comfortable in - you can always adjust later</p>
-                    <div className="flex justify-center">
+                    <div className="flex justify-center mt-20">
                         {option.map((option, index) => (
                             <div 
                                 key={index} 

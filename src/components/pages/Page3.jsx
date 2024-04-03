@@ -3,7 +3,7 @@ import robot from "../../assets/robot.webp"
 
 function Page3() {
     return (
-        <div className="flex items-center justify-center mx-auto">
+        <div className="flex items-center justify-center mx-auto mt-20">
             <div className="flex flex-row  w-full max-w-[900px] mx-4">
                 <div className="mx-4 lg-w-1/3">
                     {/* First Responsive Div */}
