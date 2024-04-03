@@ -42,15 +42,18 @@ function App() {
   return (
     <div className="max-w-[900px] mx-auto">
       <div className="flex items-center justify-between mt-2 ">
-        {/* Previous button */}
-        {showButtons && (
-          <Button onClick={prevPage} disabled={currentPage === 1} className="text-xl bg-transparent text-blue hover:bg-transparent">
-            <IoChevronBackSharp className='text-black'/>
-          </Button>
-        )}
+      {showButtons && currentPage == 1 ? null :(
+  <Button
+    onClick={prevPage}
+    className="text-xl bg-transparent text-blue hover:bg-transparent"
+  >
+    <IoChevronBackSharp className="text-black" />
+  </Button>
+)}
+
         {/* Track line */}
         {showTrackLine && (
-          <div className="flex-1 h-3 bg-slate-300 rounded-xl">
+          <div className="flex-1 h-3 mt-2 bg-slate-300 rounded-xl">
             <div className="h-3 bg-green-800 rounded-xl" style={{ width: `${lineWidth}%` }} />
           </div>
         )}
