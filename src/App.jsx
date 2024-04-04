@@ -42,14 +42,14 @@ function App() {
   return (
     <div className="max-w-[900px] mx-auto">
       <div className="flex items-center justify-between mt-2 ">
-      {showButtons && currentPage == 1 ? null :(
-  <Button
-    onClick={prevPage}
-    className="text-xl bg-transparent text-blue hover:bg-transparent"
-  >
-    <IoChevronBackSharp className="text-black" />
-  </Button>
-)}
+        {currentPage > 1 && currentPage < 6 && (
+          <Button
+            onClick={prevPage}
+            className="text-xl bg-transparent text-blue hover:bg-transparent"
+          >
+            <IoChevronBackSharp className="text-black" />
+          </Button>
+        )}
 
         {/* Track line */}
         {showTrackLine && (
